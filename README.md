@@ -1,5 +1,14 @@
 # DevOps Boot Camp 2021
 > devops practice repo
 
-## Git practice
-> git practice added into git.md file
+
+## DevOps Tools
+* [Git](https://github.com/mateors/devops/blob/master/git.md)
+* [Linux](https://github.com/mateors/linuxcmd)
+* [Docker](https://github.com/mateors/docker)
+* [Jenkins](https://github.com/mateors/jenkins)
+* [Jenkins Pipeline](https://github.com/mateors/jenkinspipeline)
+* [Maven/Selenium Project](https://github.com/mateors/mavenjenkins)
+* [NGINX]()
+* [SSH](https://github.com/mateors/sshcmd)
+* [FFMPEG](https://github.com/mateors/ffmpeg)
