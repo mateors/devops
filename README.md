@@ -9,6 +9,6 @@
 * [Jenkins](https://github.com/mateors/jenkins)
 * [Jenkins Pipeline](https://github.com/mateors/jenkinspipeline)
 * [Maven/Selenium Project](https://github.com/mateors/mavenjenkins)
-* [NGINX]()
+* [NGINX](https://github.com/mateors/devops/tree/master/nginx)
 * [SSH](https://github.com/mateors/sshcmd)
 * [FFMPEG](https://github.com/mateors/ffmpeg)
