@@ -1,12 +1,12 @@
-dg2tv.com
+#dg2tv.com
 
-sudo mkdir -p /var/www/dg2tv.com/public_html
+> sudo mkdir -p /var/www/dg2tv.com/public_html
 
-sudo chown -R $USER:$USER /var/www/dg2tv.com/public_html
+> sudo chown -R $USER:$USER /var/www/dg2tv.com/public_html
 
-sudo chmod -R 755 /var/www/dg2tv.com
+> sudo chmod -R 755 /var/www/dg2tv.com
 
-nano /var/www/dg2tv.com/public_html/index.html
+> nano /var/www/dg2tv.com/public_html/index.html
 
 ``` html
 <html>
@@ -19,8 +19,8 @@ nano /var/www/dg2tv.com/public_html/index.html
 </html>
 ```
 
-sudo nano /etc/nginx/sites-available/dg2tv.com.conf
-
+> sudo nano /etc/nginx/sites-available/dg2tv.com.conf
+```
 server {
         listen 80;
         listen [::]:80;
@@ -34,17 +34,14 @@ server {
                 try_files $uri $uri/ =404;
         }
 }
+```
 
 
+> sudo ln -s /etc/nginx/sites-available/dg2tv.com.conf /etc/nginx/sites-enabled/
 
-sudo ln -s /etc/nginx/sites-available/dg2tv.com.conf /etc/nginx/sites-enabled/
+> sudo systemctl restart nginx
 
-
-sudo systemctl restart nginx
-
-
-
-nano /lib/systemd/system/dg2tv.service
+> nano /lib/systemd/system/dg2tv.service
 
 ```
 [Unit]
@@ -62,12 +59,13 @@ ExecStart=/var/www/dg2tv.com/public_html/dg2tv
 WantedBy=multi-user.target
 ```
 
-systemctl status dg2tv
+> systemctl status dg2tv
 
-sudo ufw allow 8082/tcp
+> sudo ufw allow 8082/tcp
 
-sudo nano /etc/nginx/sites-available/dg2tv.com.conf
+> sudo nano /etc/nginx/sites-available/dg2tv.com.conf
 
+```
 server {
 
         root /var/www/dg2tv.com/public_html;
@@ -88,6 +86,6 @@ server {
 
         add_header X-Powered-By MATEORS;
 }
+```
 
-
-journalctl -u dg2tv --no-pager -f
+> journalctl -u dg2tv --no-pager -f
