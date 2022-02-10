@@ -1,4 +1,4 @@
-#dg2tv.com
+# dg2tv.com
 
 > sudo mkdir -p /var/www/dg2tv.com/public_html
 
