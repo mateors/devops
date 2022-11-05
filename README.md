@@ -1,6 +1,7 @@
 # DevOps Boot Camp 2021
 > devops practice repo
 
+## Code Quality and Code Security
 > sonar-scanner.bat -D"sonar.projectKey=python_test" -D"sonar.sources=c:\software\code." -D"sonar.host.url=http://localhost:9099" -D"sonar.login=YourKey" -D"sonar.projectBaseDir=C:\software\code"
 
 ## DevOps Tools
